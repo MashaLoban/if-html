@@ -1,13 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моя первая страница</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
 </head>
 <body>
     <h1>Моя первая страница</h1>
     <p><a href="./about/index.html">Об авторе</a></p>
+    <hr />
+    <p>Justo &#9728 &#9786 interdum odio nascetur lorem tortor maecenas aptent finibus, erat ut scelerisque ante conubia
+        dis
+        semper,
+        netus a praesent condimentum donec adipiscing magna. Bibendum fames adipiscing in
+        arcu parturient dignissim, eu varius rutrum enim feugiat sem, dictum donec potenti mattis iaculis.</p>
+    <p>Nullam &#9200 &#9994 sociosqu morbi facilisis nulla etiam posuere suspendisse, odio finibus vehicula cursus
+        sollicitudin
+        dignissim malesuada, bibendum mollis taciti erat enim torquent. Ultrices primis mi
+        orci torquent potenti inceptos phasellus netus habitant etiam, erat ante sed finibus blandit quisque elit
+        adipiscing senectus viverra, parturient mollis aliquam himenaeos nascetur in venenatis
+        nisl sodales.</p>
+    <img src="https://funfrom.me/image/bc29e739-ab77-403f-b96b-bc0b5f8b95db_p.jpg" alt="цветы" />
+    <ol>
+        <li>Знакомство с WEB<ul>
+                <li>Краткая история Web и что такое интернет.</li>
+                <li>Как устроен браузер и как он получает страницы по сети.</li>
+                <li>Что такое Git?</li>
+                <li>Создание первого репозитория</li>
+                <li>О файле .gitignore</li>
+            </ul>
+        </li>
+        <li>HTML-верстка - первые шаги<ul>
+                <li>Настройка рабочей среды</li>
+                <li>Краткая история HTML.</li>
+                <li>Какие бывают теги и что такое атрибут</li>
+                <li>Теги для работы с текстом</li>
+                <li>Создание собственной страницы</li>
+            </ul>
+        </li>
+        <li>Погружение в HTML-разметку<ul>
+                <li>Мета-теги</li>
+                <li>Мнемоники</li>
+                <li>Тег для работы с изображениями</li>
+                <li>Теги для работы со списками</li>
+                <li>Теги для работы с таблицами</li>
+                <li>Теги для работы с формами</li>
+                <li>Div-блоки</li>
+            </ul>
+        </li>
+    </ol>
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&#60;table&#62;</td>
+            <td>Defines a table</td>
+        </tr>
+        <tr>
+            <td>&#60;tr&#62;</td>
+            <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+            <td>&#60;th&#62;</td>
+            <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
+        </tr>
+        <tr>
+            <td>&#60;td&#62;</td>
+        </tr>
+        <tr>
+            <td colspan="2">Rarely used</td>
+        </tr>
+        <tr>
+            <td>&#60;caption&#62;</td>
+            <td>Defines a table caption</td>
+        </tr>
+        <tr>
+            <td>&#60;thead&#62;</td>
+            <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+            <td>&#60;tbody&#62;</td>
+            <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+            <td>&#60;tfoot&#62;</td>
+            <td>Groups the footer content in a table</td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>My first form</legend>
+        <form action="/" method="GET">
+            <label for="fname">Name</label>
+            <br />
+            <input type="text" id="fname" name="Name" placeholder="Name" required />
+            <br />
+            <label for="email">Email</label>
+            <br />
+            <input type="email" id="email" name="Email" required />
+            <br />
+            <label for="password">Password</label>
+            <br />
+            <input type="password" id="password" name="password" required />
+            <br />
+            <label for="range">Your programming level</label>
+            <br />
+            <input type="range" id="range" name="level" min="1" max="10" />
+            <br />
+            <p>What does HTML stand for?</p>
+            <input type="checkbox" id="answer1" name="html" />
+            <label for="answer1">Hyperlinks and Text Markup Language</label>
+            <br />
+            <input type="checkbox" id="answer2" name="html" />
+            <label for="answer2">Hyper Tool Markup Language</label>
+            <br />
+            <input type="checkbox" id="answer3" name="html" />
+            <label for="answer3">Hyper Text Markup Language</label>
+            <p>What does HTTP stand for?</p>
+            <input type="radio" id="answer2.1" name="http" />
+            <label for="answer2.1">Hyper Text Translate Protocol</label>
+            <br />
+            <input type="radio" id="answer2.2" name="http" />
+            <label for="answer2.2">Hyper Text Transmission Protocol</label>
+            <br />
+            <input type="radio" id="answer2.3" name="http" />
+            <label for="answer2.3">Hyper Text Transfer Protocol</label>
+            <br />
+            <p>Comment</p>
+            <textarea name="comment" cols="30" rows="2" placeholder="Comment" maxlength="500"
+                style="resize: none"></textarea>
+            <p>What does HTML stand for?</p>
+            <select name="select_html">
+                <option value="value1" selected>Your answer</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Send" />
+        </form>
+    </fieldset>
 </body>
 </html>
