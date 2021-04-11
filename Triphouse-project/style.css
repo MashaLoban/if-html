@@ -31,6 +31,10 @@
         display: flex;
         flex-direction: column;
     }
+    .footer__items{
+        display: flex;
+        flex-direction: column;  
+    }
 }
 .wrapper__item img {
     display: block;
@@ -41,5 +45,43 @@
     text-align: center;
     padding-bottom: 122px;
     font-size: 24px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+/* footer */
+.wrapper__footer{
+    max-width: 1440px;
+    height: 630px;
+    background: #10367C;
+    margin: 0px auto;
+    text-align: center;
+    max-width: 1440px;
+}
+.footer__items{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__item{
+    text-align: left;
+    margin: 120px 103px auto 10%;
+    color: #FFFFFF;
+    size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.footer__item li{
+    list-style-type: none;
+}
+.footer__item_name{
+    font-weight: 500;
+}
+.icon__triphouse{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color:#FFFFFF;
+    margin: 64px auto auto 103px;
 }
