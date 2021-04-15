@@ -3,6 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+.wrapper__header {
+    height: 100vh;
+    background: url(../images/castelmezzano.jpg) no-repeat;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.wrapper__header_navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 104px 0 104px;
+}
+.navigation__link {
+    text-decoration: none;
+}
+.navigation__link:hover {
+        border-bottom: 4px solid #F5BD41;
+}
+
+.wrapper__header_list{
+    text-align: right;
+    
+}
+.wrapper__header_text{
+    margin: 202px auto auto 104px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color:#FFFFFF;
+    font-size: 50px;
+}
+
+.wrapper__header_list_item{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 20px;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.wrapper__header_list_item a{
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    size: 24px;
+}
+
+.wrapper__header_download_items{
+    text-align: center;
+    margin: 329px auto;
+}
+
 .wrapper {
     margin: 0px auto;
     text-align: center;
