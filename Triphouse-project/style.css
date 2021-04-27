@@ -237,7 +237,9 @@
     width: 296px;
     padding-bottom: 24px;
 }
-    .wrapper_homes p:nth-child(2){
+.wrapper__item_home a{
+    text-decoration: none;
+    display: block;
     color: #3077C6;
     text-align: left;
     font-size: 24px;
@@ -512,7 +514,9 @@
         width: 155px;
         padding-bottom: 8px;
     }
-        .wrapper_homes p:nth-child(2){
+        .wrapper_homes a{
+        text-decoration: none;
+        display: block;
         color: #3077C6;
         text-align: left;
         font-size: 12px;
@@ -520,7 +524,7 @@
         font-weight: 400;
         margin-left: 10px;
     }
-    .wrapper_homes p:nth-child(3){
+    .wrapper_homes p:last-child{
         text-align: left;
         font-size: 12px;
         font-family: 'Roboto', sans-serif;
