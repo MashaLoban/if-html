@@ -1,0 +1,614 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+@media (min-width: 801px) {
+  .wrapper__header {
+    height: 100vh;
+    background: url(./images/castelmezzano.jpg) no-repeat;
+    max-width: 1440px;
+    margin: 0px auto;
+  }
+  .wrapper__header_mobile {
+    display: none;
+  }
+  .wrapper__header_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 104px 0 104px;
+  }
+  .wrapper__header_text {
+    margin: 80px auto auto 104px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 50px;
+  }
+  .wrapper__header_list_item {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 20px;
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .wrapper__header_list_item a {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .wrapper__header_download_items {
+    text-align: center;
+    margin: 180px auto;
+  }
+
+  .header__attractions {
+    text-decoration: none;
+    position: relative;
+  }
+  .header__attractions:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #f5bd41;
+    top: 38px;
+    left: 0px;
+  }
+  .header__stays {
+    position: relative;
+    text-decoration: none;
+  }
+  .header__stays::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #f5bd41;
+    top: 38px;
+    left: 0px;
+  }
+
+  .form__search_labels {
+    display: flex;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .form__label_1 {
+    margin: 100px 83px 24px 128px;
+  }
+  .form__label_2 {
+    margin: 100px 220px 24px 0px;
+  }
+  .form__search_desctop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__search_desctop label {
+    color: #FFFFFF;
+  }
+  .form__search_desctop input {
+    height: 64px;
+    width: 100%;
+  }
+  .form__search_desctop button {
+    min-width: 200px;
+    height: 64px;
+    background: #3077C6;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: -10px;
+  }
+  .form__search_1 {
+    margin-left: 104px;
+    flex-grow: 2;
+  }
+  .form__search_2 {
+    margin-top: 18px;
+    flex-grow: 2;
+  }
+  .form__search_3 {
+    margin-top: 18px;
+    flex-grow: 2;
+  }
+  .form__search_4 {
+    margin-top: 18px;
+    flex-grow: 3;
+  }
+  .form__mobile {
+    display: none;
+  }
+}
+@media (max-width: 800px) and (max-width: 800px) {
+  .wrapper__header {
+    display: none;
+  }
+  .wrapper__header_mobile {
+    height: 100vh;
+    background: url(./images/castelmezzano.jpg) no-repeat;
+    margin: 0px auto;
+  }
+  .wrapper__header_navigation_mobile {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+  .wrapper__header_logo_mobile {
+    display: inline;
+    padding-left: 10px;
+  }
+  .wrapper__header_list_item_mobile {
+    display: inline;
+    margin-right: 10px;
+  }
+  .wrapper__header_text_mobile {
+    margin: 52px 15px auto 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .wrapper__header_download_items_mobile {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .form__mobile {
+    max-width: 400px;
+    margin: 25px auto;
+    background: #f5bd41;
+    padding: 8px;
+  }
+  .form__mobile input {
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    padding: 8px;
+  }
+  .form__mobile .first {
+    margin-bottom: 8px;
+  }
+  .form__mobile .first:first-child input {
+    padding-left: 36px;
+  }
+  .form__mobile .first:first-child label {
+    position: relative;
+  }
+  .form__mobile .first:first-child label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    background-image: url("./images/search.svg");
+  }
+  .form__mobile .second {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .form__mobile .second div {
+    position: relative;
+  }
+  .form__mobile .second div:first-child {
+    margin-right: 5px;
+    flex: 1;
+  }
+  .form__mobile .second div:last-child {
+    margin-left: 5px;
+    flex: 1;
+  }
+  .form__mobile .second input {
+    padding: 16px 8px 0px 8px;
+  }
+  .form__mobile .second label {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .form__mobile .third {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .form__mobile .third input {
+    padding: 16px 8px 0px 8px;
+  }
+  .form__mobile .third div {
+    position: relative;
+  }
+  .form__mobile .third label {
+    position: absolute;
+    font-size: 12px;
+    top: 6px;
+    left: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .form__mobile button {
+    width: 100%;
+    background-color: #3077C6;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    height: 48px;
+    color: #fff;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+}
+.wrapper {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 1440px;
+}
+.wrapper h1 {
+  padding-top: 120px;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+}
+.wrapper .line {
+  width: 100px;
+  height: 4px;
+  background-color: #F5BD41;
+  margin: 24px auto 89px auto;
+}
+.wrapper__items {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.wrapper__item img {
+  display: block;
+  margin: 0px auto 60px auto;
+  height: 90px;
+}
+.wrapper p {
+  text-align: center;
+  padding-bottom: 122px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    margin: 0px auto;
+    text-align: center;
+    max-width: 1440px;
+  }
+  .wrapper p {
+    text-align: center;
+    padding-bottom: 122px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .wrapper h1 {
+    padding-top: 120px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+  }
+  .wrapper .line {
+    width: 100px;
+    height: 4px;
+    background-color: #F5BD41;
+    margin: 24px auto 89px auto;
+  }
+  .wrapper__items {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper__item img {
+    display: block;
+    margin: 0px auto 60px auto;
+    height: 90px;
+  }
+}
+.wrapper_homes {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 1440px;
+  background-color: #EAF0F9;
+}
+.wrapper_homes p:first-child {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #383838;
+  font-weight: 500;
+  padding-top: 120px;
+  padding-bottom: 105px;
+}
+.wrapper_homes p:nth-child(3) {
+  text-align: left;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #BFBFBF;
+  padding-bottom: 151px;
+  margin-left: 10px;
+}
+.wrapper__items_home {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.wrapper__item_home:last-child {
+  position: relative;
+}
+.wrapper__item_home img:last-child {
+  position: absolute;
+  top: 125px;
+  right: 0px;
+  height: 40px;
+  width: 40px;
+}
+.wrapper__item_home img:not(img:last-child) {
+  height: 296px;
+  width: 296px;
+  padding-bottom: 24px;
+}
+.wrapper__item_home a {
+  text-decoration: none;
+  display: block;
+  color: #3077C6;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .wrapper_homes {
+    margin: 0px auto;
+    text-align: center;
+    max-width: 800px;
+    background-color: #EAF0F9;
+  }
+  .wrapper_homes p:first-child {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    color: #383838;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .wrapper_homes p:last-child {
+    text-align: left;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #BFBFBF;
+    padding-bottom: 56px;
+    margin-left: 10px;
+  }
+  .wrapper_homes a {
+    text-decoration: none;
+    display: block;
+    color: #3077C6;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  .wrapper__items_home {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 0px auto;
+  }
+  .wrapper__item_home img:not(img:last-child) {
+    height: 156px;
+    width: 155px;
+    padding-bottom: 8px;
+  }
+  .wrapper__item_home:first-child {
+    flex: 1;
+    position: relative;
+  }
+  .wrapper__item_home:nth-child(2) {
+    flex: 1;
+    position: relative;
+  }
+  .wrapper__item_home:nth-child(2)::after {
+    content: url(../images/button_next_mobile.svg);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    height: 28px;
+    width: 28px;
+  }
+  .wrapper__item_home:nth-child(3) {
+    display: none;
+  }
+  .wrapper__item_home:nth-child(4) {
+    display: none;
+  }
+  .wrapper__item_home:nth-child(5) {
+    display: none;
+  }
+}
+.wrapper__footer {
+  max-width: 1440px;
+  height: 630px;
+  background: #10367C;
+  margin: 0px auto;
+  text-align: center;
+}
+.wrapper__footer_mobile {
+  display: none;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  text-align: left;
+  margin: 120px 103px auto 10%;
+  color: #FFFFFF;
+  size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.footer__item li {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+.footer__item li :first-child {
+  font-weight: 500;
+}
+
+.icon__triphouse {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 64px auto auto 103px;
+}
+
+@media (max-width: 800px) {
+  .wrapper__footer {
+    display: none;
+  }
+  .wrapper__footer_mobile {
+    display: block;
+    justify-content: space-between;
+    background: #10367C;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .footer__mobile_logo {
+    margin: 40px auto;
+  }
+  .footer__mobile_items {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 32px;
+  }
+  .footer__mobile_items li a {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+  }
+
+  .icon__triphouse_mobile {
+    color: #FFFFFF;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 801px) {
+  .wrapper__reviews {
+    margin: 0px auto;
+    max-width: 1440px;
+    background-color: #FFFFFF;
+  }
+  .wrapper__reviews_title {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: #383838;
+    font-weight: 500;
+    padding-top: 120px;
+    padding-bottom: 104px;
+    text-align: center;
+  }
+  .wrapper__reviews_items {
+    display: flex;
+    justify-content: space-around;
+  }
+  .wrapper__reviews_item {
+    width: 400px;
+    min-height: 760px;
+    background-color: #EAF0F9;
+  }
+  .wrapper__reviews_item a {
+    text-decoration: none;
+    color: #3077C6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+  .wrapper__reviews_item_country {
+    color: #3077C6;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 24px;
+  }
+  .wrapper__reviews_user1 {
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #EAF0F9;
+  }
+  .wrapper__reviews_user1 image {
+    padding-left: 29px;
+    padding-right: 21px;
+  }
+  .wrapper__reviews_user1_text {
+    display: block;
+    padding-left: 20px;
+  }
+  .wrapper__reviews_user1_name {
+    color: #383838;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .wrapper__reviews_user1_country {
+    color: #BFBFBF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .wrapper__reviews_comment {
+    padding: 24px;
+  }
+}

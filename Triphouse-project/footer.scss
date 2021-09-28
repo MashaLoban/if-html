@@ -1,0 +1,81 @@
+.wrapper__footer{
+    max-width: 1440px;
+    height: 630px;
+    background: #10367C;
+    margin: 0px auto;
+    text-align: center;
+    &_mobile{
+        display: none;
+    }
+}
+.footer{
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        text-align: left;
+        margin: 120px 103px auto 10%;
+        color: #FFFFFF;
+        size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        li {
+            list-style-type: none;
+            margin-bottom: 25px;
+            :first-child{
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+.icon__triphouse{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color:#FFFFFF;
+    margin: 64px auto auto 103px;
+
+}
+@media (max-width: 800px){
+    .wrapper__footer{
+        display: none;
+        &_mobile{
+            display: block;
+            justify-content: space-between;
+            background: #10367C;
+            margin: 0px auto;
+            text-align: center;
+        }
+    }
+    .footer__mobile{
+        &_logo{
+            margin: 40px auto;
+        }
+        &_items{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            margin-bottom: 32px;
+            li a{
+                color: #FFFFFF;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-size: 15px;
+                font-weight: 500;
+                list-style-type: none
+            }
+        }
+    }
+    .icon__triphouse_mobile{
+        color: #FFFFFF;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+}
