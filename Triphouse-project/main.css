@@ -504,6 +504,9 @@ body {
 }
 
 @media (max-width: 800px) {
+  .wrapper__reviews{
+    display: none;
+  }
   .wrapper__footer {
     display: none;
   }
@@ -567,6 +570,8 @@ body {
     background-color: #EAF0F9;
   }
   .wrapper__reviews_item a {
+    display: block;
+    margin-top: 10px;
     text-decoration: none;
     color: #3077C6;
     font-family: "Roboto", sans-serif;
@@ -576,6 +581,7 @@ body {
     padding-left: 24px;
   }
   .wrapper__reviews_item_country {
+    margin: 10px 0;
     color: #3077C6;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
