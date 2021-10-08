@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+@media (min-width: 801px){
+.wrapper__header{
+    height: 100vh;
+    background: url(./images/castelmezzano.jpg) no-repeat;
+    max-width: 1440px;
+    margin: 0px auto;
+    &_mobile {
+        display: none;
+    }
+    &_navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 51px 104px 0 104px;
+    }
+    &_text{
+        margin: 80px auto auto 104px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color:#FFFFFF;
+        font-size: 50px;
+    }
+    &_list_item{
+        color: #FFFFFF;
+        font-size: 24px;
+        margin-left: 20px;
+        display: inline;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        a {
+            color:#FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+        }
+    }
+    &_download_items{
+        text-align: center;
+        margin: 180px auto;
+    }
+}
+.header{
+    &__attractions{
+        text-decoration: none;
+        position: relative;
+        &:hover::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #f5bd41;
+            top: 38px;
+            left: 0px;
+        }
+    }
+    &__stays{
+        position: relative;
+        text-decoration: none;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #f5bd41;
+            top: 38px;
+            left: 0px;
+        }
+    }
+}
+.form{
+    &__search_labels{
+        display:flex;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    &__label_1{
+        margin: 100px 83px 24px 128px;
+    }
+    &__label_2{
+        margin: 100px 220px 24px 0px;
+    }
+    &__search{
+        &_desctop{
+            display: flex;
+            justify-content: space-between;
+            label {
+                color: #FFFFFF;
+            }
+            input {
+                height: 64px;
+                width: 100%;
+            }
+            button {
+                min-width: 200px;
+                height: 64px;
+                background: #3077C6;
+                color: #FFFFFF;
+                border-radius: 10px;
+                margin-left: -10px;
+            }
+        }
+        &_1{
+            margin-left: 104px;
+            flex-grow: 2;
+        }
+        &_2{
+            margin-top: 18px;
+            flex-grow: 2;
+        }
+        &_3{
+            margin-top: 18px;
+            flex-grow: 2;
+        }
+        &_4{
+            margin-top: 18px;
+            flex-grow: 3;
+        }
+    }
+    &__mobile{
+        display:none;
+    }
+}
+}
+@media (max-width: 800px){
+    
+//     .wrapper__header_mobile {
+//         height: 100vh;
+//         background: url(../images/castelmezzano.jpg) no-repeat;
+//         margin: 0px auto;
+//       }
+      
+//       .wrapper__header_navigation_mobile {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 12px;
+//       }
+      
+//       .wrapper__header_logo_mobile {
+//         display: inline;
+//         padding-left: 10px;
+//       }
+      
+//       .wrapper__header_list_item_mobile {
+//         display: inline;
+//         margin-right: 10px;
+//       }
+      
+//       .wrapper__header_text_mobile {
+//         margin: 52px 15px auto 15px;
+//         font-family: 'Roboto', sans-serif;
+//         font-weight: 500;
+//         color: #FFFFFF;
+//         font-size: 30px;
+//         margin-bottom: 25px;
+//       }
+      
+//       .wrapper__header_download_items_mobile {
+//         text-align: center;
+//         margin-top: 150px;
+//       }
+      
+//       .wrapper__header {
+//         display: none;
+//       }
+      
+//       .form__mobile {
+//         max-width: 400px;
+//         margin: 25px auto;
+//         background: #f5bd41;
+//         padding: 8px;
+      
+//         input {
+//           width: 100%;
+//           height: 48px;
+//           border-radius: 3px;
+//           border: none;
+//           outline: none;
+//           font-size: 15px;
+//           font-family: 'Roboto', sans-serif;
+//           font-weight: 500;
+//           padding: 8px;
+//         }
+      
+//         .first {
+//           margin-bottom: 8px;
+      
+//           &:first-child {
+//             input {
+//               padding-left: 36px;
+//             }
+      
+//             label {
+//               position: relative;
+      
+//               &::before {
+//                 content: '';
+//                 display: block;
+//                 position: absolute;
+//                 left: 10px;
+//                 top: 1px;
+//                 width: 16px;
+//                 height: 16px;
+//                 background-image: url('../images/search.svg');
+//               }
+//             }
+//           }
+//         }
+      
+//         .second {
+//           display: flex;
+//           margin-bottom: 8px;
+      
+//           div {
+//             &:first-child {
+//               margin-right: 5px;
+//               flex: 1;
+//             }
+      
+//             &:last-child {
+//               margin-left: 5px;
+//               flex: 1;
+//             }
+//           }
+      
+//           input {
+//             padding: 16px 8px 0px 8px;
+//           }
+      
+//           div {
+//             position: relative;
+//           }
+      
+//           label {
+//             position: absolute;
+//             left: 10px;
+//             top: 4px;
+//             font-size: 12px;
+//             font-family: 'Roboto', sans-serif;
+//             font-weight: 400;
+//           }
+//         }
+      
+//         .third {
+//           display: flex;
+//           margin-bottom: 8px;
+      
+//           input {
+//             padding: 16px 8px 0px 8px;
+//           }
+      
+//           div {
+//             position: relative;
+//           }
+      
+//           label {
+//             position: absolute;
+//             font-size: 12px;
+//             top: 6px;
+//             left: 8px;
+//             font-family: 'Roboto', sans-serif;
+//             font-weight: 400;
+//           }
+//         }
+      
+//         button {
+//           width: 100%;
+//           background-color: #3077C6;
+//           border-radius: 4px;
+//           border: none;
+//           outline: none;
+//           height: 48px;
+//           color: #fff;
+//           font-size: 19px;
+//           font-family: 'Roboto', sans-serif;
+//           font-weight: 500;
+//         }
+//       }
+// }
+@media (max-width: 800px){
+    .wrapper__header{
+        display: none;
+        &_mobile{
+            height: 100vh;
+            background: url(./images/castelmezzano.jpg) no-repeat;
+            margin: 0px auto;
+        }
+        &_navigation_mobile{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 12px;
+        }
+        &_logo_mobile{
+            display: inline;
+            padding-left: 10px;
+        }
+        &_list_item_mobile{
+            display:inline;
+            margin-right: 10px;
+        }
+        &_text_mobile{
+            margin: 52px 15px auto 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color:#FFFFFF;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        &_download_items_mobile{
+            text-align: center;
+            margin-top: 150px;
+        }
+    }
+    .form__mobile{
+        max-width: 400px;
+        margin: 25px auto;
+        background: #f5bd41;
+        padding: 8px;
+        input {
+            width: 100%;
+            height: 48px;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            padding: 8px;
+        }
+        .first{
+            margin-bottom: 8px;
+            &:first-child{
+                input {
+                    padding-left: 36px;
+                }
+                label {
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: 10px;
+                        top: 1px;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url('./images/search.svg');
+                    }
+                }
+            }
+        }
+        .second{
+            display: flex;
+            margin-bottom: 8px;
+            div{
+                position: relative;
+                &:first-child{
+                    margin-right: 5px;
+                    flex:1;
+                }
+                &:last-child{
+                    margin-left: 5px;
+                    flex:1;
+                }
+            }
+            input{
+                padding: 16px 8px 0px 8px;
+            }
+            label{
+                position: absolute;
+                left: 10px;
+                top: 4px;
+                font-size: 12px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+        }
+        .third{
+            display: flex;
+            margin-bottom: 8px;
+            input{
+                padding: 16px 8px 0px 8px;
+            }
+            div{
+                position: relative;
+            }
+            label{
+                position: absolute;
+                font-size: 12px;
+                top: 6px;
+                left: 8px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+        }
+        button{
+            width: 100%;
+            background-color: #3077C6;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            height: 48px;
+            color: #fff;
+            font-size: 19px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+}

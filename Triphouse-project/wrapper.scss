@@ -1,0 +1,79 @@
+.wrapper{
+    margin: 0px auto;
+    text-align: center;
+    max-width: 1440px;
+    h1 {
+        padding-top: 120px;
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    }
+    .line {
+        width: 100px;
+        height: 4px;
+        background-color: #F5BD41;
+        margin: 24px auto 89px auto;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    &__item img{
+        display: block;
+        margin: 0px auto 60px auto;
+        height: 90px;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 122px;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 800px){
+    .wrapper{
+        margin: 0px auto;
+        text-align: center;
+        max-width: 1440px;
+        p{
+            text-align: center;
+            padding-bottom: 122px;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+        }
+        h1{
+            padding-top: 120px;
+            font-size: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: normal;
+        }
+        .line{
+            width: 100px;
+            height: 4px;
+            background-color: #F5BD41;
+            margin: 24px auto 89px auto;
+        }
+        &__items{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__item{
+            img{
+                display: block;
+                margin: 0px auto 60px auto;
+                height: 90px;
+            }
+        }
+    }
+}

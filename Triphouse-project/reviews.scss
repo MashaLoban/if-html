@@ -1,0 +1,80 @@
+@media (min-width: 801px){
+.wrapper{
+    &__reviews{
+        margin: 0px auto;
+        // text-align: center;
+        max-width: 1440px;
+        background-color: #FFFFFF;
+        &_title{
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            color: #383838;
+            font-weight: 500;
+            padding-top: 120px;
+            padding-bottom: 104px;
+            text-align: center;
+        }
+        &_items{
+            display: flex;
+            justify-content: space-around;
+        }
+        &_item{
+            width: 400px;
+            min-height: 760px;
+            background-color: #EAF0F9;
+            a{
+                display: block;
+                margin-top: 10px;
+                text-decoration:none;
+                color:#3077C6;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                text-align: left;
+                
+                padding-top: 24px;
+                padding-left: 24px;
+            }
+            &_country{
+                color:#3077C6;
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+                padding-left: 24px;
+
+            }
+        }
+        &_user1{
+            // font-weight: normal;
+            // font-size: 18px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background-color: #EAF0F9;
+            image {
+                padding-left: 29px;
+                padding-right: 21px;
+            }
+            &_text{
+                display: block;
+                padding-left: 20px;
+            }
+            &_name{
+                color:#383838; 
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            &_country{
+                color:#BFBFBF;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+        &_comment{
+            padding: 24px;
+        }
+    }
+    
+}
+}

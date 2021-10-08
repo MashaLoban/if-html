@@ -5,7 +5,7 @@
 }
 
 @media (min-width: 801px){
-.wrapper__header {
+/* .wrapper__header {
     height: 100vh;
     background: url(../images/castelmezzano.jpg) no-repeat;
     max-width: 1440px;
@@ -37,7 +37,6 @@
     top: 38px;
     left: 0px;
   }
-  
   .header__attractions:hover::after {
     content: "";
     position: absolute;
@@ -81,7 +80,6 @@
 .form__label_2{
     margin: 100px 220px 24px 0px;
 }
-
 .form__search_desctop {
     display: flex;
     justify-content: space-between;
@@ -92,7 +90,6 @@
 .form__search_desctop input{
     height: 64px;
     width: 100%;
-
 }
 .form__search_desctop button{
     min-width: 200px;
@@ -118,15 +115,14 @@
     margin-top: 18px;
     flex-grow: 3;
 }
-
 .wrapper__header_download_items{
     text-align: center;
     margin: 180px auto;
 }
 .form__mobile {
     display:none;
-}
-.wrapper {
+} */
+/* .wrapper {
     margin: 0px auto;
     text-align: center;
     max-width: 1440px;
@@ -161,8 +157,8 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-}
-.wrapper__footer{
+} */
+/* .wrapper__footer{
     max-width: 1440px;
     height: 630px;
     background: #10367C;
@@ -200,8 +196,8 @@
 }
 .wrapper__footer_mobile{
     display: none;
-}
-.wrapper_homes{
+} */
+/* .wrapper_homes{
     margin: 0px auto;
     text-align: center;
     max-width: 1440px;
@@ -256,7 +252,7 @@
     padding-bottom: 151px;
     margin-left: 10px;
 }
-}
+} */
 
 @media (max-width: 800px){
     .wrapper__header_mobile {
@@ -387,7 +383,7 @@
         font-weight: 500;
 
 }
-.wrapper {
+/* .wrapper {
     margin: 0px auto;
     text-align: center;
     max-width: 1440px;
@@ -426,8 +422,8 @@
     .wrapper .wrapper__items {
         display: flex;
         flex-direction: column;
-    }
-    .wrapper__footer{
+    } */
+    /* .wrapper__footer{
         display: none;
     }
     .wrapper__footer_mobile{
@@ -445,7 +441,6 @@
         justify-content: space-around;
         list-style-type: none;
         margin-bottom: 32px;
-
     }
     .footer__mobile_items li a{
         color: #FFFFFF;
@@ -462,8 +457,8 @@
         font-weight: 400;
         font-size: 12px;
         padding-bottom: 40px;
-    }
-    .wrapper_homes{
+    } */
+    /* .wrapper_homes{
         margin: 0px auto;
         text-align: center;
         max-width: 800px;
@@ -533,4 +528,5 @@
         padding-bottom: 56px;
         margin-left: 10px;
     }
+} 
 }
